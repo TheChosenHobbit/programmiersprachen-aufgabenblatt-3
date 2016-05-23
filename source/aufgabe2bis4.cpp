@@ -38,7 +38,7 @@ int main()
 	
 	for (int i = 0; i <= 100; ++i) 
 	{
-    	if (listeSet.count(i) == false) {
+    	if (listeSet.count(i) == 0) {
       		std::cout << i << "\n";
     	}
     }
@@ -49,6 +49,10 @@ int main()
     	map1[i]=std::count(liste1.begin(), liste1.end(), i);
 	}
 
+    //for (auto i : liste1) {
+    //	++map1[i];
+    //}
+    
 	std::cout << "Zahl: Haeufigkeit" << std::endl;
 	for (int i = 0; i<=100; ++i){
 		if (map1[i]>0){

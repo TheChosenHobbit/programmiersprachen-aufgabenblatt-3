@@ -75,7 +75,7 @@ TEST_CASE("sort_list_lambda","[sort lambda]"){
 		listCircle.push_back(c);
 	}
 
-	listCircle.sort([](Circle a, Circle b)
+	listCircle.sort([](Circle const& a, Circle const& b)
 	{
 		return a.getRadius()<b.getRadius();
 	});
